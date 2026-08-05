@@ -1,0 +1,7 @@
+{
+  "$comment": "Each entry is one always-on seed worker. `model` is the Ollama ref (its size, e.g. 7b/14b/70b, decides the pricing tier). Add/remove entries to scale the fleet; you need a GPU big enough for the largest model listed.",
+  "instances": [
+    { "name": "mini", "model": "llama3.2:3b", "modelId": "nuro-mini-3b" },
+    { "name": "base", "model": "qwen2.5:7b", "modelId": "nuro-base-7b" }
+  ]
+}

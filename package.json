@@ -1,0 +1,24 @@
+{
+  "name": "nuro-workers",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Nuro first-party seed fleet - keeps the inference network alive (online capacity) before external contributors onboard.",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/fleet.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "prod": "node dist/fleet.js"
+  },
+  "dependencies": {
+    "@nuro/worker": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
